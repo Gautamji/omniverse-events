@@ -21,6 +21,8 @@ import RecordingModal from '../RecordingModal';
 import Text from '../Text';
 import Timer from '../Timer';
 
+import { Logo } from '@assets/index';
+
 const MINUTE = 60 * 1000;
 const LENGTH = (ungatedFeaturesEnabled() ? 15 : 60) * MINUTE;
 const SHOWAFTER = LENGTH - 2 * MINUTE;
@@ -117,12 +119,13 @@ export const TopBar = ({
       testID="TopBar"
     >
       <Space style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 16 }}>
-        <Pill
+        {/* <Pill
           size="l"
           style={{ minWidth: 122, height: 30, borderRadius: 6, backgroundColor: getColor('grey.800') }}
           text="Logo"
           testID="Logo"
-        />
+        /> */}
+        <img src={Logo} width="100"/>
         <Text type="h6" color="white" testID="MeetingName">
           {getFriendlyName(eventName ?? conference?.alias ?? '')}
         </Text>

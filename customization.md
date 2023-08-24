@@ -29,7 +29,7 @@ To add a company logo in place of our placeholder `logo` in the events app, you 
 <Pill
     size="l"
     style={{ minWidth: 122, height: 30, borderRadius: 6, backgroundColor: getColor('grey.800') }}
-    text="Logo"
+    text="TheOmniverse.city"
     testID="Logo"
 />
 
